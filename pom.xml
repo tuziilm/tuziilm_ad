@@ -12,6 +12,7 @@
     <modules>
         <module>ad-eureka-server</module>
         <module>ad-gateway-server</module>
+        <module>ad-business-server</module>
     </modules>
 
     <name>tuziilm_ad</name>
