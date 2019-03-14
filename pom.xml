@@ -11,6 +11,8 @@
     <!--子模块管理-->
     <modules>
         <module>ad-eureka-server</module>
+        <module>adzuulserver</module>
+        <module>ad-gateway-server</module>
     </modules>
 
     <name>tuziilm_ad</name>

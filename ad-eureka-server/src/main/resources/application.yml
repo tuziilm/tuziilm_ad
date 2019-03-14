@@ -6,7 +6,7 @@ server:
   port: 8000
 eureka:
   instance:
-    hostname: localhost
+    hostname: server1
   client:
       allow-redirects: false
       fetch-registry: false
@@ -14,5 +14,45 @@ eureka:
       service-url:
         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-
-
+#---
+#
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server1
+#server:
+#  port: 8000
+#eureka:
+#  instance:
+#    hostname: server1
+#  client:
+#    service-url:
+#      defaultZone: http://server2:8001/eureka,http://server3:8002/eure
+#---
+#
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server2
+#server:
+#  port: 8001
+#eureka:
+#  instance:
+#    hostname: server2
+#  client:
+#    service-url:
+#      defaultZone: http://server1:8000/eureka,http://server3:8002/eureka
+#---
+#
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server3
+#server:
+#  port: 8002
+#eureka:
+#  instance:
+#    hostname: server3
+#  client:
+#    service-url:
+#      defaultZone: http://server1:8000/eureka,http://server2:8001/eureka
